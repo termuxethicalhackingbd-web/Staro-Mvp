@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Staro Spin & Earn (Demo)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#071428;color:#e6f0ff;padding:20px}
+    .box{background:#081a2b;padding:18px;border-radius:10px;margin-bottom:12px;max-width:820px}
+    button{padding:10px 14px;border:none;border-radius:8px;background:#2b8cff;color:#fff;cursor:pointer}
+    .muted{color:#9fb3d8;font-size:13px}
+    .row{display:flex;gap:12px;align-items:center}
+  </style>
+</head>
+<body>
+  <h2>Staro Spin & Earn — Demo Webapp</h2>
+
+  <div class="box">
+    <div><strong>User:</strong> <span id="username">DarkKnight</span> (<span id="userid">u1</span>)</div>
+    <div class="row" style="margin-top:8px">
+      <div>⭐ Stars: <strong id="stars">-</strong></div>
+      <div>🪙 Tokens: <strong id="tokens">-</strong></div>
+      <div>🔋 Boost: <strong id="boost">-</strong></div>
+      <div>🎯 Spins: <strong id="spins">-</strong></div>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>Spin</h3>
+    <div class="row" style="margin-bottom:10px">
+      <button id="paidSpin">Paid Spin (200 ⭐)</button>
+      <button id="freeSpin">Free Spin (Daily)</button>
+      <button id="buyBoost">Buy Boost (mock pay)</button>
+    </div>
+    <div id="result" class="muted"></div>
+  </div>
+
+  <div class="box">
+    <h3>Leaderboards</h3>
+    <div id="leaderboards" class="muted">Loading...</div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
